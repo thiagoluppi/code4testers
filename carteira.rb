@@ -1,5 +1,8 @@
-nome = "Thiago"
-idade = 5
+puts "Qual o seu nome?"
+nome = gets
+
+puts "Qual sua idade?"
+idade = gets.chomp.to_i
 
 if (idade >= 18)
   puts "#{nome}, voce pode tirar carteira de motorista, voce tem #{idade}"
