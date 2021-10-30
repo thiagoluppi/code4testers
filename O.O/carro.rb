@@ -1,23 +1,27 @@
 class Carro
   attr_accessor :nome, :cor, :marca
 
+  def initialize(nome)
+    @nome = nome
+  end
+
   def ligar
     puts "Carro #{@nome} esta pronto para iniciar o trajeto"
   end
 end
 
-creta = Carro.new
+creta = Carro.new("Creta")
 
-creta.nome = "Creta"
-creta.cor = "Branco"
-creta.marca = "Hyundai"
+# creta.nome = "Creta"
+# creta.cor = "Branco"
+# creta.marca = "Hyundai"
 
 creta.ligar
 
-fusca = Carro.new
+fusca = Carro.new("Fusca")
 
-fusca.nome = "Fusca"
-fusca.cor = "Bege"
-fusca.marca = "Volkswagen"
+# fusca.nome = "Fusca"
+# fusca.cor = "Bege"
+# fusca.marca = "Volkswagen"
 
 fusca.ligar
